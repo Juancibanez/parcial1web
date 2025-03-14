@@ -1,0 +1,14 @@
+.robots-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Add space between the table and the detail */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add spacing between the table and the detail */
+}
+
+.robots-container table {
+    flex: 2; /* Allow the table to take more space */
+}
+
+.robots-container > div {
+    flex: 1; /* Allow the detail section to take less space */
+}
