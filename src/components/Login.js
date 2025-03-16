@@ -1,5 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { FormattedMessage } from 'react-intl';
 
 import './Login.css';
 
@@ -61,24 +62,24 @@ function Login() {
   return (
     <div className = "login-container">
       <div>
-        <h1>Inicio de Sesión</h1>
+        <h1><FormattedMessage id="login.title" /></h1>
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formBasicEmail">
-            <Form.Label>Nombre de usuario</Form.Label>
+            <Form.Label><FormattedMessage id="login.username" /></Form.Label>
             <Form.Control type="text" value = {usuario} onChange={handleInputUsuario}/>
 
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label>Contraseña</Form.Label>
+            <Form.Label><FormattedMessage id="login.password" /></Form.Label>
             <Form.Control type="password" value = {password} onChange={handleInputContraseña}/>
           </Form.Group>
 
           <Button variant="primary" type="submit">
-            Ingresar
+            <FormattedMessage id="login.submit" />
           </Button>
           <Button variant="danger" type="button" onClick={handleCancel}>
-            Cancelar
+            <FormattedMessage id="login.cancel" />
           </Button>
           {error && <p className = "error">{error}</p>}
         </Form>

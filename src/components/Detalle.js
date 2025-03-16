@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Card from 'react-bootstrap/Card';
+import { FormattedMessage } from 'react-intl';
 
 function Detalle({id}) {
 
@@ -34,13 +35,13 @@ function Detalle({id}) {
           <Card.Body>
             <Card.Title>{robot.nombre}</Card.Title>
             <Card.Text>
-              Año de fabricacion: {robot.añoFabricacion}
+              <FormattedMessage id="details.year" /> {robot.añoFabricacion}
             </Card.Text>
             <Card.Text>
-              Capacidad de Procesamiento: {robot.capacidadProcesamiento}
+              <FormattedMessage id="details.capacity" /> {robot.capacidadProcesamiento}
             </Card.Text>
             <Card.Text>
-              Humor: {robot.humor}
+              <FormattedMessage id="details.mood" /> {robot.humor}
             </Card.Text>
           </Card.Body>
         </Card>

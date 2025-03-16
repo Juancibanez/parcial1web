@@ -1,0 +1,14 @@
+{
+    "header.title": "Adopt a robot with Robot Lovers!",
+    "table.name": "Name",
+    "table.model": "Model",
+    "table.manufacturer": "Manufacturer",
+    "details.year": "Year of Manufacture:",
+    "details.capacity": "Processing Capacity:",
+    "details.mood": "Mood:",
+    "login.title": "Login",
+    "login.username": "Username",
+    "login.password": "Password",
+    "login.submit": "Submit",
+    "login.cancel": "Cancel"
+  }

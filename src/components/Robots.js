@@ -2,6 +2,7 @@ import Detalle from './Detalle';
 import './Robots.css';
 import { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
+import { FormattedMessage } from 'react-intl';
 
 function Robots() {
     
@@ -35,9 +36,9 @@ function Robots() {
                 <thead className="thead-dark">
                     <tr>
                         <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Modelo</th>
-                        <th>Empresa Fabricante</th>
+                        <th><FormattedMessage id="table.name" /></th>
+                        <th><FormattedMessage id="table.model" /></th>
+                        <th><FormattedMessage id="table.manufacturer" /></th>
                     </tr>
                 </thead>
                 <tbody>
